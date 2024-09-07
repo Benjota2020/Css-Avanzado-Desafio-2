@@ -1,0 +1,98 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    grid-area: header;
+    background-color: #25527b;
+    text-align: center;
+}
+.header h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 120%;
+    padding: 1% 0;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    background-color: #e7e7e7;
+    gap: 20px;
+    padding: 20px ;
+}
+.main img{
+    height: 350px;
+    width: 350px;
+}
+button{
+    background-color: #25527b;
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px black solid;
+    color: rgb(51, 136, 131);
+    
+}
+.card h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 200%;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.card h2 {
+    margin: 0px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 140%;
+    margin-top: 4%;
+    margin-bottom: 4%;}
+    
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #e7e7e7;
+}
+.sidebar h1{
+    font-size: 25px;
+    color:#25527b ;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.sidebar p {
+    font-size: 15px;
+    color: rgb(51, 136, 131);
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(141, 194, 213);
+    text-align: center;
+    color: #25527b;
+}
+.grid-container{
+    background-color: #e7e7e7;
+    display: grid;
+    grid-template-areas: 
+    'header header' 'sidebar main ' 'footer footer';
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
